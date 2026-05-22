@@ -17,7 +17,7 @@ spec:
         spec:
           containers:
             - name: busybox
-              image: ikulyk404/busyboxplus:curl
+              image: busyboxplus:curl
               resources:
                 limits:
                   memory: "128Mi"
@@ -28,5 +28,5 @@ spec:
 
               command: ["/bin/sh", "-c"]
               args:
-              - "curl -s http://todoapp-service.todoapp.svc.cluster.local/api/health"
+                - "curl -s http://todoapp-service.todoapp.svc.cluster.local/api/health"
           restartPolicy: Never

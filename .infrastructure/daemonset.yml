@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: busybox
-        image: ikulyk404/busyboxplus:curl
+        image: busyboxplus:curl
 
         resources:
           requests:
